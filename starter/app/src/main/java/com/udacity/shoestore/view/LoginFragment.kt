@@ -26,6 +26,10 @@ class LoginFragment : Fragment() {
         { view: View ->
             view.findNavController().navigate(R.id.action_loginFragment_to_onBoardingFragment)
         }
+        binding.createAccountTextView.setOnClickListener @kotlin.Suppress("UNUSED_ANONYMOUS_PARAMETER")
+        { view: View ->
+            view.findNavController().navigate(R.id.action_loginFragment_to_onBoardingFragment)
+        }
         return binding.root
     }
 }

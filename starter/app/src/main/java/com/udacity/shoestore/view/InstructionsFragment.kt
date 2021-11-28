@@ -7,23 +7,22 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.udacity.shoestore.R
-import com.udacity.shoestore.databinding.FragmentOnBoardingBinding
+import com.udacity.shoestore.databinding.FragmentInstructionsBinding
 
 /**
- * OnBoardingFragment: Welcome/On boarding  screen
+ * InstructionsFragment: Instructions screen
  */
-class OnBoardingFragment : Fragment() {
-
-    private var _binding: FragmentOnBoardingBinding? = null
+class InstructionsFragment : Fragment() {
+    private var _binding: FragmentInstructionsBinding? = null
     private val binding get() = _binding!!
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentOnBoardingBinding.inflate(inflater, container, false)
+        _binding = FragmentInstructionsBinding.inflate(inflater, container, false)
         binding.nextButton.setOnClickListener @kotlin.Suppress("UNUSED_ANONYMOUS_PARAMETER")
         { view: View ->
-            view.findNavController().navigate(R.id.action_onBoardingFragment_to_instructionsFragment)
+            view.findNavController().navigate(R.id.action_instructionsFragment_to_shoeListFragment)
         }
         return binding.root
     }

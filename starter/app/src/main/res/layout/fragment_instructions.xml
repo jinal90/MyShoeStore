@@ -28,28 +28,28 @@
 
 
             <TextView
-                android:id="@+id/welcomeTextView"
+                android:id="@+id/instructionTitleTextView"
                 style="@style/TextLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="20dp"
                 android:paddingBottom="20dp"
-                android:text="Welcome to Shoe Store App!"
+                android:text="Instructions"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/descriptionTextView"
+                android:id="@+id/instructionDescriptionTextView"
                 style="@style/TextLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="20dp"
                 android:paddingBottom="20dp"
-                android:text="With the help of this app, you will be able to store list of shoes in your inventory."
+                android:text="Shoe list screen: This screen will show list of shoes in your inventory. \n\nShoe detail screen: This screen can be used to add new shoes to your inventory."
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/welcomeTextView" />
+                app:layout_constraintTop_toBottomOf="@+id/instructionTitleTextView" />
 
 
             <Button
