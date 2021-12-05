@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="8dp">
+        android:paddingTop="5dp">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            app:cardBackgroundColor="@color/cardBackgroundTransparent"
             app:cardCornerRadius="4dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -23,50 +25,44 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:padding="8dp">
 
                 <TextView
                     android:id="@+id/shoeNameTextView"
-                    style="@android:style/TextAppearance"
+                    style="@style/TextLabelCard"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginBottom="4dp"
-                    android:text="Shoe Name"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Shoe Name" />
 
                 <TextView
                     android:id="@+id/shoeSizeTextView"
-                    style="@android:style/TextAppearance"
+                    style="@style/TextLabelCard"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginBottom="4dp"
-                    android:text="Shoe Size"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/shoeNameTextView" />
+                    app:layout_constraintTop_toBottomOf="@id/shoeNameTextView"
+                    tools:text="Shoe Size" />
 
                 <TextView
                     android:id="@+id/shoeCompanyTextView"
-                    style="@android:style/TextAppearance"
+                    style="@style/TextLabelCard"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:text="Shoe Company"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/shoeSizeTextView" />
+                    app:layout_constraintTop_toBottomOf="@id/shoeSizeTextView"
+                    tools:text="Shoe Company" />
+
                 <TextView
                     android:id="@+id/shoeDescriptionTextView"
-                    style="@android:style/TextAppearance"
+                    style="@style/TextLabelCard"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginBottom="8dp"
-                    android:text="Shoe Description"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/shoeCompanyTextView" />
+                    app:layout_constraintTop_toBottomOf="@id/shoeCompanyTextView"
+                    tools:text="Shoe Description" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>

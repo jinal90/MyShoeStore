@@ -8,11 +8,11 @@
         <entry key="app/src/main/res/drawable/ic_baseline_key_24.xml" value="0.31927083333333334" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.27853260869565216" />
         <entry key="app/src/main/res/layout/fragment_instructions.xml" value="0.26992753623188404" />
-        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.27853260869565216" />
-        <entry key="app/src/main/res/layout/fragment_on_boarding.xml" value="0.27853260869565216" />
-        <entry key="app/src/main/res/layout/fragment_shoe_detail.xml" value="0.26992753623188404" />
-        <entry key="app/src/main/res/layout/fragment_shoe_list.xml" value="0.26992753623188404" />
-        <entry key="app/src/main/res/layout/shoe_item_layout.xml" value="0.26992753623188404" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_on_boarding.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_shoe_detail.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_shoe_list.xml" value="0.11377245508982035" />
+        <entry key="app/src/main/res/layout/shoe_item_layout.xml" value="0.1" />
         <entry key="app/src/main/res/xml/navigation_graph.xml" value="0.27853260869565216" />
       </map>
     </option>

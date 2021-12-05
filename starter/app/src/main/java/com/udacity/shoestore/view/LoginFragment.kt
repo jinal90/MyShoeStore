@@ -21,7 +21,7 @@ class LoginFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentLoginBinding.inflate(inflater, container, false)
         (requireActivity() as AppCompatActivity).supportActionBar?.hide()
         binding.loginButton.setOnClickListener @kotlin.Suppress("UNUSED_ANONYMOUS_PARAMETER")
