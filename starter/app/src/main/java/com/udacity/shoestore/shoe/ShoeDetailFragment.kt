@@ -18,7 +18,7 @@ class ShoeDetailFragment : Fragment() {
     private var _binding: FragmentShoeDetailBinding? = null
     private val binding get() = _binding!!
     private val viewModel: ShoeViewModel by activityViewModels()
-
+    
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -28,9 +28,14 @@ class ShoeDetailFragment : Fragment() {
         (requireActivity() as AppCompatActivity).supportActionBar?.show()
         _binding = FragmentShoeDetailBinding.inflate(inflater, container, false)
         binding.saveButton.setOnClickListener {
-            viewModel.addShoe(
-                binding.shoeNameEditText.text.toString(),
-                binding.shoeSizeEditText.text.toString().toDouble(),
+            val size: Double = if (binding.shoeSizeEditText.text.toString() == ""){
+                0.0
+            }else{
+                binding.shoeSizeEditText.text.toString().toDouble()
+            }
+
+            viewModel.addShoe(binding.shoeNameEditText.text.toString(),
+                size,
                 binding.shoeCompanyEditText.text.toString(),
                 binding.shoeDescriptionEditText.text.toString()
             )
