@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Shoe Store</string>
+    <string name="shoe_list_screen_title">Shoe List</string>
+    <string name="shoe_detail_screen_title">Add Shoe</string>
+    <string name="shoe_detail_title">Enter details about the shoe</string>
+    <string name="enter_name_hint">Enter name</string>
+    <string name="enter_size_hint">Enter size</string>
+    <string name="enter_company_hint">Enter company</string>
+    <string name="enter_desc_hint">Enter description</string>
+    <string name="save_button">Save</string>
+    <string name="cont_desc_add_shoe">Floating button to add the new shoe to the list.</string>
+    <string name="instructions_screen_title">Instructions</string>
+    <string name="instructions_one">There are two screens in the app. \n\n Shoe list screen: This screen will show list of shoes in your inventory. \n\n Shoe detail screen: This screen can be used to add new shoes to your inventory.</string>
+    <string name="instructions_two">Some lorem ipsum instruction text.</string>
+    <string name="next_button">Next</string>
+    <string name="enter_email_hint">Enter Email</string>
+    <string name="enter_password_hint">Enter Password</string>
+    <string name="create_account_textview">Create Account</string>
+    <string name="login_button">Login</string>
+    <string name="welcome_screen_title">Welcome to Shoe Store App!</string>
+    <string name="welcome_description_textview">With the help of this app, you will be able to store list of shoes in your inventory.</string>
+</resources>
