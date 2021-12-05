@@ -1,3 +1,11 @@
+# ScreenShots
+
+![Login Screen](/screens/login.png?raw=true "Login Screen")
+![Welcome Screen](/screens/welcome.png?raw=true "Welcome Screen")
+![Instructions Screen](/screens/instructions.png?raw=true "Instructions Screen")
+![Shoe List Screen](/screens/shoe_list.png?raw=true "Shoe List Screen")
+![Shoe Detail Screen](/screens/shoe_detail.png?raw=true "Shoe Detail Screen")
+
 # The Shoe Store
 
 This project will consist of five screens. You don't have to create a shoe store, you can use any other item as long as you create the following screens. You will be creating:
