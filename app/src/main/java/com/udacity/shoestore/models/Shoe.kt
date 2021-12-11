@@ -1,8 +1,12 @@
 package com.udacity.shoestore.models
 
-import android.os.Parcelable
-import kotlinx.android.parcel.Parcelize
+import androidx.databinding.BaseObservable
+import androidx.databinding.Bindable
 
-@Parcelize
-data class Shoe(var name: String, var size: Double, var company: String, var description: String) :
-    Parcelable
+data class Shoe(
+    @Bindable var name: String = "",
+    @Bindable var size: String = "",
+    @Bindable var company: String = "",
+    @Bindable var description: String = ""
+) :
+    BaseObservable()

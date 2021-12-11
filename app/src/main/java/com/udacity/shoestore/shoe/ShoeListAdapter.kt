@@ -12,7 +12,7 @@ import com.udacity.shoestore.models.Shoe
  * @author Jinal Tandel
  * @since 05/12/2021
  */
-class ShoeListAdapter (private val dataSet: ArrayList<Shoe>?) :
+class ShoeListAdapter(private val dataSet: ArrayList<Shoe?>?) :
     RecyclerView.Adapter<ShoeListAdapter.ViewHolder>() {
 
     /**
@@ -33,13 +33,13 @@ class ShoeListAdapter (private val dataSet: ArrayList<Shoe>?) :
 
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
 
-        dataSet?.let{
-            viewHolder.nameTextView.text = "Name: ${it[position].name}"
-            viewHolder.sizeTextView.text = "Size: ${it[position].size}"
-            viewHolder.companyTextView.text = "Company: ${it[position].company}"
-            viewHolder.descriptionTextView.text = "Description: ${it[position].description}"
+        dataSet?.let {
+            viewHolder.nameTextView.text = "Name: ${it[position]?.name}"
+            viewHolder.sizeTextView.text = "Size: ${it[position]?.size}"
+            viewHolder.companyTextView.text = "Company: ${it[position]?.company}"
+            viewHolder.descriptionTextView.text = "Description: ${it[position]?.description}"
         }
     }
 
-    override fun getItemCount() = dataSet?.size?:0
+    override fun getItemCount() = dataSet?.size ?: 0
 }

@@ -3,6 +3,13 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <data>
+
+        <variable
+            name="shoeViewModel"
+            type="com.udacity.shoestore.shoe.ShoeViewModel" />
+    </data>
+
     <!--  Usage: Constraintlayout to layer the semitransparent background
         and all other views on top of each other.  -->
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -67,7 +74,8 @@
                         style="@style/EditTextLabel"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/enter_name_hint" />
+                        android:hint="@string/enter_name_hint"
+                        android:text="@={shoeViewModel.newShoe.name}" />
 
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -76,21 +84,24 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/enter_size_hint"
-                        android:inputType="number" />
+                        android:inputType="number"
+                        android:text="@={shoeViewModel.newShoe.size}" />
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/shoeCompanyEditText"
                         style="@style/EditTextLabel"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/enter_company_hint" />
+                        android:hint="@string/enter_company_hint"
+                        android:text="@={shoeViewModel.newShoe.company}" />
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/shoeDescriptionEditText"
                         style="@style/EditTextLabel"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/enter_desc_hint" />
+                        android:hint="@string/enter_desc_hint"
+                        android:text="@={shoeViewModel.newShoe.description}" />
 
                 </LinearLayout>
             </ScrollView>

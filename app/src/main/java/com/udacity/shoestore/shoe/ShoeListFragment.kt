@@ -23,7 +23,8 @@ class ShoeListFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        (requireActivity() as AppCompatActivity).supportActionBar?.title = getString(R.string.shoe_list_screen_title)
+        (requireActivity() as AppCompatActivity).supportActionBar?.title =
+            getString(R.string.shoe_list_screen_title)
         (requireActivity() as AppCompatActivity).supportActionBar?.show()
 
         val shoeListAdapter = ShoeListAdapter(viewModel.shoeList.value)
