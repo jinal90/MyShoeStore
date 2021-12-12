@@ -8,5 +8,16 @@ data class Shoe(
     @Bindable var size: String = "",
     @Bindable var company: String = "",
     @Bindable var description: String = ""
-) :
-    BaseObservable()
+) : BaseObservable(){
+    val shoeName: String
+        get() = "Name: $name"
+
+    val shoeSize: String
+        get() = "Size: $size"
+
+    val shoeCompany: String
+        get() = "Company: $company"
+
+    val shoeDescription: String
+        get() = "Description: $description"
+}

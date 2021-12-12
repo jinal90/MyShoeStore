@@ -24,11 +24,13 @@
             android:layout_height="match_parent"
             android:padding="18dp">
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/shoeListRecyclerView"
+            <!--  Usage: Linear layout to stack all the cardviews for
+                shoe vertically on screen  -->
+            <LinearLayout
+                android:id="@+id/containerShoeList"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layoutManager="LinearLayoutManager" />
+                android:orientation="vertical"/>
         </ScrollView>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
