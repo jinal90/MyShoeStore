@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <!--  Usage: LinearLayout just as a container for cardview.  -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="5dp"
@@ -15,24 +16,21 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             app:cardBackgroundColor="@color/cardBackgroundTransparent"
-            app:cardCornerRadius="4dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:cardCornerRadius="4dp">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <!--  Usage: LinearLayout to stack all the textviews
+            vertically in the row layout. -->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="8dp">
+                android:padding="8dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/shoeNameTextView"
                     style="@style/TextLabelCard"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
                     tools:text="Shoe Name" />
 
                 <TextView
@@ -40,8 +38,6 @@
                     style="@style/TextLabelCard"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/shoeNameTextView"
                     tools:text="Shoe Size" />
 
                 <TextView
@@ -49,8 +45,6 @@
                     style="@style/TextLabelCard"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/shoeSizeTextView"
                     tools:text="Shoe Company" />
 
                 <TextView
@@ -58,13 +52,11 @@
                     style="@style/TextLabelCard"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/shoeCompanyTextView"
                     tools:text="Shoe Description" />
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
         </androidx.cardview.widget.CardView>
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 </layout>
